@@ -1,10 +1,10 @@
 <div class="row totalContainer">
   <div class="left tags droidnaskh">
     <div class="tag row" ng-repeat="tag in uiOption.tags" ng-click="tagClick()">
-      <input type="checkbox left" ng-model="tag.active"><div class="tagName left" ng-bind="tag.name"></div>
+      <input type="checkbox" class="left" ng-model="tag.active"><div class="tagName left" ng-bind="tag.name"></div>
     </div>
   </div>
   <div class="left notes yekan">
-    <div class=" taj" ng-repeat="note in uiOption.liveNotes" ng-click="noteClick" ng-bind="note.text"></div>
+    <div class="rtl taj" ng-repeat="note in uiOption.liveNotes" ng-click="noteClick" ng-bind="note.text"></div>
   </div>
 </div>

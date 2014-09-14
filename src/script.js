@@ -1,4 +1,4 @@
-(function (ng, _, undefined){
+;(function (ng, _, undefined){
   var
   viewNoteUiOption = {
     tags: [{id: 0, active: false, name: 'دانشگاه'}, {id: 1, active: true, name: 'منزل'}],
