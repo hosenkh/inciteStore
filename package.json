@@ -1,5 +1,5 @@
 {
-  "name": "Idea Store",
+  "name": "IdeaStore",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "postinstall": "bower install",
     "prestart": "npm install",
     "start": "http-server -a localhost -p 8000"
   },
