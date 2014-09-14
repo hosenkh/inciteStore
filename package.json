@@ -1,0 +1,17 @@
+{
+  "name": "Idea Store",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "~0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000"
+  },
+  "author": "Hoseyn Khabbazian zade <hosenkh@gmail.com>",
+  "license": "MIT"
+}
