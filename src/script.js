@@ -1,12 +1,17 @@
 (function (ng, _, undefined){
   var
-  
+  viewNoteUiOption = {
+    tags: [{id: 0, active: false, name: 'دانشگاه'}, {id: 1, active: true, name: 'منزل'}],
+    liveNotes: [{text: 'از دانشگاه', tags: [1,2,3]},{text: 'از منزل', tags: [2,3,4]}]
+  },
   /**
-   * the controller for the main page
+   * the controller for the viewNote page
    * @param  {angular injection} $scope the scope
    */
-  mainController = function($scope){
-    _.extend($scope, {});
+  viewNoteControl = function($scope){
+    _.extend($scope, {
+      uiOption: viewNoteUiOption
+    });
   },
 
   /**
@@ -16,7 +21,7 @@
   init = function(){
     ng
       .module('main', [])
-      .controller('mainControl', ['$scope', mainController]);
+      .controller('viewNoteControl', ['$scope', viewNoteControl]);
   }
   ;
   return {init: init};

@@ -6,12 +6,12 @@
    */
   configurater = function(routeProvider){
     routeProvider
-      .when('', {
-        templateUrl: '',
-        controller: ''
+      .when('viewNote', {
+        templateUrl: 'partials/viewNote.html',
+        controller: 'viewNote'
       })
       .otherwise({
-        redirectTo: ''
+        redirectTo: 'viewNote'
       });
   },
 
