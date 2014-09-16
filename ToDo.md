@@ -1,4 +1,4 @@
-[a] 
+[a] add relation between tags and notes
 
 [x] show fake notes and fake tags
 
