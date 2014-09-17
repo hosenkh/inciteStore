@@ -10,6 +10,10 @@
         templateUrl: 'partials/viewNote.html',
         controller: 'viewNoteControl'
       })
+      .when('/management', {
+        templateUrl: 'partials/management.html',
+        controller: 'managePageControl'
+      })
       .otherwise({
         redirectTo: '/viewNote'
       });
@@ -21,7 +25,7 @@
   init = function(){
     ng
       .module('router',['main','ngRoute','NoteFilter'])
-      .config(['$routeProvider', configurater])
+      .config(['$routeProvider', configurater]);
   }
   ;
   return {init: init};

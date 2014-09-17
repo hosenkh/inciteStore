@@ -16,6 +16,18 @@
     });
   },
 
+  managePageUiOption = {},
+
+  /**
+   * the controller for the management page
+   * @param  {angular injection} $scope the scope
+   */
+  managePageControl = function($scope){
+    _.extend($scope, {
+      uiOption: managePageUiOption
+    });
+  },
+
   /**
    * app initializer
    * @return {[type]} [description]
@@ -23,7 +35,8 @@
   init = function(){
     ng
       .module('main', [])
-      .controller('viewNoteControl', ['$scope', viewNoteControl]);
+      .controller('viewNoteControl', ['$scope', viewNoteControl])
+      .controller('managePageControl', ['$scope', managePageControl]);
   }
   ;
   return {init: init};
