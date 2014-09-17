@@ -1,6 +1,8 @@
-[a] add relation between tags and notes
+[a] check if there is logical paradoxes
 
 [x] show fake notes and fake tags
+[x] add relation between tags and notes
+[x] write a filter function
 
 [x] release v0.0.1 show fake notes and fake tags
 [ ] release v0.0.2 work with fake data
