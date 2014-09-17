@@ -1,9 +1,11 @@
 ;(function (ng, _, undefined){
   var
   viewNoteUiOption = {
-    tags: [{id: 0, active: false, name: 'دانشگاه'}, {id: 1, active: true, name: 'منزل'}],
-    liveNotes: [{text: 'از دانشگاه', tags: [1,2,3]},{text: 'از منزل', tags: [2,3,4]}]
+    tags: [{id: 0, active: false, name: 'دانشگاه'}, {id: 1, active: true, name: 'منزل'}, {id: 2, active: true, name: 'مسیر'}],
+    notes: [{text: 'از دانشگاه', activeTags: [0], passiveTags: [2]},{text: 'از منزل', activeTags: [1], passiveTags: [0]}]
   },
+
+
   /**
    * the controller for the viewNote page
    * @param  {angular injection} $scope the scope
