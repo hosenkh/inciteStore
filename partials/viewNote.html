@@ -3,6 +3,7 @@
     <div class="tag row" ng-repeat="tag in uiOption.tags" ng-click="tagClick()">
       <input type="checkbox" class="left" ng-model="tag.active"><div class="tagName left" ng-bind="tag.name"></div>
     </div>
+    <div class="addNewTag"><a href="#/management/addTag">افزودن تگ جدید</a></div>
   </div>
   <div class="left notes yekan">
     <div class="rtl taj" ng-repeat="note in uiOption.notes | noteFilter : uiOption.tags" ng-click="noteClick" ng-bind="note.text"></div>

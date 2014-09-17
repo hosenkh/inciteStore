@@ -10,7 +10,7 @@
         templateUrl: 'partials/viewNote.html',
         controller: 'viewNoteControl'
       })
-      .when('/management', {
+      .when('/management/:action', {
         templateUrl: 'partials/management.html',
         controller: 'managePageControl'
       })
