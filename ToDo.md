@@ -1,12 +1,12 @@
-[a] rename newNote page to 'management'
-[ ] link to management page
-[ ] view all tags and notes in management page
+[a] view all tags and notes in management page
 [ ] interface for adding new tags
 
 [x] show fake notes and fake tags
 [x] add relation between tags and notes
 [x] write a filter function
 [x] check if there is logical paradoxes
+[x] rename newNote page to 'management'
+[x] link to management page
 
 [x] release v0.0.1 show fake notes and fake tags
 [x] release v0.0.2 work with fake data
