@@ -20,8 +20,8 @@
    */
   init = function(){
     ng
-      .module('router',['main','ngRoute'])
-      .config(['$routeProvider', configurater]);
+      .module('router',['main','ngRoute','NoteFilter'])
+      .config(['$routeProvider', configurater])
   }
   ;
   return {init: init};

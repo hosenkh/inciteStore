@@ -5,6 +5,6 @@
     </div>
   </div>
   <div class="left notes yekan">
-    <div class="rtl taj" ng-repeat="note in uiOption.liveNotes" ng-click="noteClick" ng-bind="note.text"></div>
+    <div class="rtl taj" ng-repeat="note in uiOption.notes | noteFilter : uiOption.tags" ng-click="noteClick" ng-bind="note.text"></div>
   </div>
 </div>
