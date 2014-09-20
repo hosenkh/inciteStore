@@ -22,7 +22,9 @@
    * the controller for the management page
    * @param  {angular injection} $scope the scope
    */
-  managePageControl = function($scope){
+  managePageControl = function($scope, $routeParams){
+    var
+    action = $routeParams.action;
     _.extend($scope, {
       uiOption: managePageUiOption
     });
@@ -34,9 +36,9 @@
    */
   init = function(){
     ng
-      .module('main', [])
+      .module('main', ['ngRoute'])
       .controller('viewNoteControl', ['$scope', viewNoteControl])
-      .controller('managePageControl', ['$scope', managePageControl]);
+      .controller('managePageControl', ['$scope', '$routeParams', managePageControl]);
   }
   ;
   return {init: init};
