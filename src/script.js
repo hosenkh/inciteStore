@@ -16,17 +16,45 @@
     });
   },
 
-  managePageUiOption = {},
+  noteManagePageUiOption = {},
 
   /**
-   * the controller for the management page
+   * the controller for the note management page
    * @param  {angular injection} $scope the scope
    */
-  managePageControl = function($scope, $routeParams){
+  noteManagePageControl = function($scope){
     var
     action = $routeParams.action;
     _.extend($scope, {
-      uiOption: managePageUiOption
+      uiOption: notManagePageUiOption
+    });
+  },
+  
+  statManagePageUiOption = {},
+
+  /**
+   * the controller for the status management page
+   * @param  {angular injection} $scope the scope
+   */
+  statManagePageControl = function($scope){
+    var
+    action = $routeParams.action;
+    _.extend($scope, {
+      uiOption: statManagePageUiOption
+    });
+  },
+
+  logPageUiOption = {},
+
+  /**
+   * the controller for the log page
+   * @param  {angular injection} $scope the scope
+   */
+  logPageControl = function($scope){
+    var
+    action = $routeParams.action;
+    _.extend($scope, {
+      uiOption: logPageUiOption
     });
   },
 
@@ -38,7 +66,9 @@
     ng
       .module('main', ['ngRoute'])
       .controller('homeControl', ['$scope', homePageControl])
-      .controller('managePageControl', ['$scope', '$routeParams', managePageControl]);
+      .controller('noteManagePageControl', ['$scope', noteManagePageControl])
+      .controller('statManagePageControl', ['$scope', statManagePageControl])
+      .controller('logPageControl', ['$scope', logPageControl]);
   }
   ;
   return {init: init};

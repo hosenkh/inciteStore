@@ -10,6 +10,18 @@
         templateUrl: 'partials/homePage.html',
         controller: 'homeControl'
       })
+      .when('/noteManagement', {
+        templateUrl: 'partials/noteManPage.html',
+        controller: 'noteControl'
+      })
+      .when('/statusManagement', {
+        templateUrl: 'partials/statManPage.html',
+        controller: 'statusControl'
+      })
+      .when('/log', {
+        templateUrl: 'partials/logPage.html',
+        controller: 'logControl'
+      })
       .otherwise({
         redirectTo: '/home'
       });
