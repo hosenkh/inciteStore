@@ -7,3 +7,52 @@ body{
   -o-user-select: none;
   user-select: none;
 }
+
+.totalcontainer {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.header {
+  border-bottom: 1px solid black;
+  height: 20%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.notebox {
+  border-bottom: 1px solid black;
+  height: 40%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.changestatus {
+  border-bottom: 1px solid black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40%;
+}
+
+.links ul {
+  padding: 0;
+}
+.links ul li {
+  list-style-type: none;
+  float: right;
+  margin: 10px;
+}
+.links ul li a {
+  text-decoration: none;
+  color: #000;
+}
