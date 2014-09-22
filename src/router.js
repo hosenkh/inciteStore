@@ -6,16 +6,12 @@
    */
   configurater = function(routeProvider){
     routeProvider
-      .when('/viewNote', {
-        templateUrl: 'partials/viewNote.html',
-        controller: 'viewNoteControl'
-      })
-      .when('/management/:action', {
-        templateUrl: 'partials/management.html',
-        controller: 'managePageControl'
+      .when('/home', {
+        templateUrl: 'partials/homePage.html',
+        controller: 'homeControl'
       })
       .otherwise({
-        redirectTo: '/viewNote'
+        redirectTo: '/home'
       });
   },
 

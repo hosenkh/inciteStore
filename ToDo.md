@@ -1,16 +1,9 @@
-[a] view all tags and notes in management page
-[ ] interface for adding new tags
-
-[x] show fake notes and fake tags
-[x] add relation between tags and notes
-[x] write a filter function
-[x] check if there is logical paradoxes
-[x] rename newNote page to 'management'
-[x] link to management page
+[a] griding the home page
 
 [x] release v0.0.1 show fake notes and fake tags
 [x] release v0.0.2 work with fake data
-[ ] release v0.0.3 add new tag
+[ ] release v0.0.3 new home page with fake links and states
+
 
 [ ] release v0.1.0 add new note with real tag functionality
 [ ] release v0.1.1 delete tags and notes
